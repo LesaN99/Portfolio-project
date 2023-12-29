@@ -41,6 +41,14 @@ p {
     width: 70px;
 }
 
+.nav {
+    padding: 20px 0;
+}
+
+
+.logo {
+    width: 65px;
+}
 
 
 nav ul {
@@ -51,7 +59,23 @@ nav ul {
 nav li {
     display: inline;
     list-style: none;
+    line-height: 42px;
+    font-size: 16px;
+    font-family: var(--default-font-family);
+    margin-left: 15px;
 }
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
 
 .hero {
     text-align: center;
@@ -149,5 +173,9 @@ nav li {
 
     .content img {
         margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 }
