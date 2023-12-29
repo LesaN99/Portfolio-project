@@ -175,6 +175,13 @@ nav li.active a {
         margin-top: 20px;
     }
 
+
+    .palesa-picture {
+     max-width: 50%;
+     display: block;
+     margin: 0 auto;
+}
+
     nav a {
         font-size: 12px;
     }
