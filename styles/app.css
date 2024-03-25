@@ -6,27 +6,80 @@
      --default-font-family: 'Poppins',
             sans-serif;
 }
+
 h1 {
     font-family: var(--heading-font-family);
+    background: linear-gradient(96.2deg,
+        rgb(255, 230, 112) 10.4%,
+        rgb(255, 100, 100) 43.8%,
+        rgb(0, 93, 219) 105.8%);
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        letter-spacing: 4px;
     font-size: 96px;
     font-weight: bold;
     line-height: 1.5;
     margin: 0;
 }
 
+h1:hover {
+    background-size: 200%;
+    animation: ani 5s linear infinite;
+}
+
+
+@keyframes ani {
+0% {
+    background-position: 0 0;
+}
+
+50% {
+    background-position: 400 0;
+}
+
+100% {
+    background-position: 0 0;
+}
+}
+
+
+
 h2 {
     font-family: var(--default-font-family);
+    background: linear-gradient(90.2deg, rgb(89, 185, 88) 1.8%, rgb(242, 174, 67) 50.9%, rgb(219, 82, 76) 98.7%);
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    letter-spacing: 4px;
     font-size: 36px;
     font-weight: bold;
     margin: 0;
 }
 
+h2:hover {
+    background-size: 200%;
+    animation: ani 5s linear infinite;
+}
+
+
 h3 {
     font-family: var(--default-font-family);
+    background: linear-gradient(137.9deg, rgb(78, 156, 226) 7.8%, rgb(62, 146, 69) 16%, rgb(251, 220, 23) 32.7%, rgb(242, 160, 35) 50.4%, rgb(253, 12, 12) 71.5%, rgb(192, 26, 129) 83.1%);;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+     letter-spacing: 4px;
     font-size: 24px;
     font-weight: normal;
-    color: #272142;
     line-height: 1.5;
+}
+h3:hover {
+    background-size: 200%;
+    animation: ani 5s linear infinite
 }
 
 h4 {
@@ -40,6 +93,7 @@ p {
     font-weight: normal;
     line-height: 30px;
 }
+
 
 .flag {
     margin: 0 auto;
@@ -85,6 +139,19 @@ nav li.active a {
 .hero {
     text-align: center;
     padding: 80px 20px;
+}
+
+.btn-branding1 {
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    font-family: var(--default-font-family);
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px; 
+    background: black;
 }
 
 .btn-branding {
@@ -152,6 +219,7 @@ nav li.active a {
 font-size: 20px;
 font-family: var(--default-font-family);
 }
+
 
 footer {
     margin: 60px 0;
